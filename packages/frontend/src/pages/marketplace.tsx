@@ -49,7 +49,7 @@ const MarketplacePage: NextPage = () => {
           mr={8}
           w="100%"
         >
-          {isLoading ? <Spinner /> : <p>Repay Loan with Stable Coins</p>}
+          {isLoading ? <Spinner /> : <p>Buy Carbon Tokens</p>}
         </Button>
       </div>
       <>
