@@ -87,7 +87,7 @@ export const NavigationBar: FC = () => {
           Marketplace
         </Button>
 
-        <Button
+        {/* <Button
           onClick={() => {
             router.push('/admin')
           }}
@@ -101,7 +101,7 @@ export const NavigationBar: FC = () => {
           mr={8}
         >
           Admin Portal
-        </Button>
+        </Button> */}
       </div>
     </>
   )
