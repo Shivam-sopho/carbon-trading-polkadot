@@ -44,7 +44,7 @@ export const PublicTransportHistory: FC = () => {
       distance: 41,
     }
     setData((prevData) => {
-      return [...prevData, newData]
+      return [newData, ...prevData]
     })
   }
 
