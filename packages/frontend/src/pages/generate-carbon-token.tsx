@@ -57,9 +57,7 @@ const GenerateCarbonTokenPage: NextPage = () => {
   return (
     <>
       <div>
-        <h1 tw="mt-8 ml-8 font-black font-mono text-4xl tracking-tight">
-          Generate Carbon Token Page
-        </h1>
+        <h1 tw="mt-8 ml-8 font-black font-mono text-4xl tracking-tight">Generate Carbon Tokens</h1>
 
         <PublicTransportHistory />
       </div>
