@@ -9,6 +9,7 @@ import {
 } from '@scio-labs/use-inkathon'
 import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import PublicTransportHistory from '@components/home/PublicTransportHistory'
 import 'twin.macro'
 
 const GenerateCarbonTokenPage: NextPage = () => {
@@ -42,7 +43,8 @@ const GenerateCarbonTokenPage: NextPage = () => {
         <h1 tw="mt-8 ml-8 font-black font-mono text-4xl tracking-tight">
           Generate Carbon Token Page
         </h1>
-        <h2>Total supply is {totalSupply} </h2>
+
+        <PublicTransportHistory />
       </div>
     </>
   )
