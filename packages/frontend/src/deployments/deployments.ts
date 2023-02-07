@@ -3,7 +3,7 @@ import { alephzeroTestnet, SubstrateDeployment } from '@scio-labs/use-inkathon'
 export enum ContractIds {
   greeter = 'greeter',
   pair = 'pair',
-  erc20 = 'erc20',
+  carbonToken = 'carbonToken',
 }
 
 export const getDeployments = async (): Promise<SubstrateDeployment[]> => {
@@ -23,7 +23,7 @@ export const getDeployments = async (): Promise<SubstrateDeployment[]> => {
         .address,
     },
     {
-      contractId: ContractIds.erc20,
+      contractId: ContractIds.carbonToken,
       networkId: alephzeroTestnet.network,
       abi: await import(`@inkathon/contracts/deployments/erc20/metadata.json`),
       address: (await import(`@inkathon/contracts/deployments/erc20/alephzero-testnet.json`))
