@@ -9,13 +9,26 @@ import {
   TableCaption,
   TableContainer,
   Button,
+  Spinner,
+} from '@chakra-ui/react'
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { useState } from 'react'
 import 'twin.macro'
 
 export const PublicTransportHistory: FC = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const today: Date = new Date()
   const [data, setData] = useState<Array<any>>([])
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const tempData: Array<any> = []
   for (let i = 1; i < 6; i++) {
@@ -43,9 +56,14 @@ export const PublicTransportHistory: FC = () => {
       date: new Date(),
       distance: 41,
     }
-    setData((prevData) => {
-      return [newData, ...prevData]
-    })
+    setIsLoading(true)
+    setTimeout(() => {
+      setIsLoading(false)
+      setData((prevData) => {
+        return [newData, ...prevData]
+      })
+      onOpen()
+    }, 7000)
   }
 
   return (
@@ -76,11 +94,30 @@ export const PublicTransportHistory: FC = () => {
             rounded="2xl"
             colorScheme="purple"
             mr={8}
+            w="50%"
           >
-            Generate Carbon Tokens for Today
+            {isLoading ? <Spinner /> : <p>Generate Carbon Tokens for Today</p>}
           </Button>
         </div>
       </div>
+      <>
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Successful</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              <p>Successfully generated Carbon Tokens and added to the list.</p>
+            </ModalBody>
+
+            <ModalFooter>
+              <Button colorScheme="purple" mr={3} onClick={onClose}>
+                Close
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
     </>
   )
 }

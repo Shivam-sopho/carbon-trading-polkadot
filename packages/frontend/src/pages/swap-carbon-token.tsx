@@ -54,7 +54,7 @@ const SwapCarbonTokenPage: NextPage = () => {
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Successful</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <p>Successfully swapped Carbon Tokens with Stable Coin</p>

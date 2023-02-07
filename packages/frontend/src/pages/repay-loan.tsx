@@ -51,7 +51,7 @@ const RepayLoanPage: NextPage = () => {
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Successful</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <p>Successfully repaid your loan</p>

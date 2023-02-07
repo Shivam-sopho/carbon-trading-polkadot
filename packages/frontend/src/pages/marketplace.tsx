@@ -56,7 +56,7 @@ const MarketplacePage: NextPage = () => {
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Successful</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <p>Successfully bought carbon tokens</p>

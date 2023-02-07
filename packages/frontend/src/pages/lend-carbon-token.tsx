@@ -54,7 +54,7 @@ const LendCarbonTokenPage: NextPage = () => {
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Successful</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <p>Successfully lent Carbon Tokens</p>

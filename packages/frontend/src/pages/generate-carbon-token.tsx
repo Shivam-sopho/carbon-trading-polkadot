@@ -19,41 +19,6 @@ const GenerateCarbonTokenPage: NextPage = () => {
   const [totalSupply, setTotalSupply] = useState<string>()
   const [updateIsLoading, setUpdateIsLoading] = useState<boolean>()
 
-  // const fetchTotalSupply = async () => {
-  //   if (!account || !contract || !signer || !api) {
-  //     console.log(account)
-  //     console.log(contract)
-  //     console.log(signer)
-  //     console.log(api)
-  //     toast.error('Wallet not connected. Try again…')
-  //     return
-  //   }
-  //   setFetchIsLoading(true)
-  //   try {
-  //     await contractTx(
-  //       api,
-  //       account.address,
-  //       contract,
-  //       'mint',
-  //       {},
-  //       [349, account.address],
-  //       (result) => {
-  //         if (result?.status?.isInBlock) {
-  //           console.log('Tokens generated')
-  //         }
-  //       },
-  //     )
-  //   } catch (e) {
-  //     console.error(e)
-  //     toast.error('Error while fetching greeting. Try again…')
-  //   } finally {
-  //     setFetchIsLoading(false)
-  //   }
-  // }
-  // useEffect(() => {
-  //   fetchTotalSupply()
-  // }, [contract])
-
   return (
     <>
       <div>
