@@ -23,7 +23,7 @@ const RepayLoanPage: NextPage = () => {
     setTimeout(() => {
       setIsLoading(false)
       onOpen()
-      setAvailableTokens((prevValue) => prevValue - 10)
+      setAvailableTokens(0)
     }, 7000)
   }
   return (
