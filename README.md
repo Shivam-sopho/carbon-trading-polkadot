@@ -82,7 +82,7 @@ rustup component add rust-src
 rustup target add wasm32-unknown-unknown
 
 # 2. Install ink! tooling (https://use.ink/getting-started/setup#ink-cli)
-cargo install cargo-contract --force --locked --git https://github.com/paritytech/cargo-contract.git
+cargo install cargo-contract --force --locked --git https://github.com/paritytech/cargo-contract.git // Don't run
 cargo install cargo-dylint dylint-link --force --locked
 
 # 3. Install local substrate-contracts-node (https://github.com/paritytech/substrate-contracts-node)
