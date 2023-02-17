@@ -26,7 +26,7 @@ export const getDeployments = async (): Promise<SubstrateDeployment[]> => {
       contractId: ContractIds.carbonToken,
       networkId: alephzeroTestnet.network,
       abi: await import(`@inkathon/contracts/deployments/shares/metadata.json`),
-      address: (await import(`@inkathon/contracts/deployments/shares/shibuya-testnet.json`))
+      address: (await import(`@inkathon/contracts/deployments/shares/alephzero-testnet.json`))
         .address,
     },
     // TODO Add deployment for development chain
