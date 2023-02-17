@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
+import 'twin.macro'
 
 const GenerateCarbonTokenPage: NextPage = () => {
   return (
     <>
-      <h1>Generate Carbon Token Page</h1>
+      <div>
+        <h1 tw="mt-8 ml-8 font-black font-mono text-4xl tracking-tight">
+          Generate Carbon Token Page
+        </h1>
+      </div>
     </>
   )
 }
