@@ -43,6 +43,8 @@ export const ConnectButton: FC<ConnectButtonProps> = () => {
         fontWeight="bold"
         rounded="2xl"
         colorScheme="purple"
+        mt={8}
+        mr={8}
       >
         Connect Wallet
       </Button>

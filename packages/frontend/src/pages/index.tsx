@@ -20,20 +20,20 @@ const HomePage: NextPage = () => {
 
   return (
     <>
-      {/* Top Bar */}
-      <HomeTopBar />
-
-      <CenterBody tw="mt-20 mb-10 px-5">
+      <div tw="flex flex-row justify-between">
         {/* Title */}
         <HomePageTitle />
 
         {/* Connect Wallet Button */}
         <ConnectButton />
+      </div>
+      <div tw="mr-8 flex flex-row justify-end">
+        {/* Chain Metadata Information */}
+        <ChainInfo />
+      </div>
 
+      <CenterBody tw="mt-20 mb-10 px-5">
         <div tw="mt-10 flex w-full flex-wrap items-start justify-center gap-4">
-          {/* Chain Metadata Information */}
-          <ChainInfo />
-
           {/* Greeter Read/Write Contract Interactions */}
           <GreeterContractInteractions />
         </div>

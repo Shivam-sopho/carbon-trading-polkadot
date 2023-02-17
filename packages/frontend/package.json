@@ -31,6 +31,7 @@
     "@polkadot/types": "^9.13.2",
     "@polkadot/util": "^10.3.1",
     "@scio-labs/use-inkathon": "0.0.1-alpha.15",
+    "framer-motion": "^9.0.4",
     "next": "^13.1.6",
     "next-seo": "^5.15.0",
     "nprogress": "^0.2.0",
