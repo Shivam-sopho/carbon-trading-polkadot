@@ -27,7 +27,7 @@ const HomePage: NextPage = () => {
         {/* Connect Wallet Button */}
         <ConnectButton />
       </div>
-      <div tw="mr-8 flex flex-row justify-end">
+      <div tw="mr-8t flex flex-row justify-end">
         {/* Chain Metadata Information */}
         <ChainInfo />
       </div>
