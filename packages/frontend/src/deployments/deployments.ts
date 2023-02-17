@@ -3,6 +3,7 @@ import { alephzeroTestnet, SubstrateDeployment } from '@scio-labs/use-inkathon'
 export enum ContractIds {
   greeter = 'greeter',
   pair = 'pair',
+  erc20 = 'erc20',
 }
 
 export const getDeployments = async (): Promise<SubstrateDeployment[]> => {
@@ -19,6 +20,13 @@ export const getDeployments = async (): Promise<SubstrateDeployment[]> => {
       networkId: alephzeroTestnet.network,
       abi: await import(`@inkathon/contracts/deployments/pair/metadata.json`),
       address: (await import(`@inkathon/contracts/deployments/pair/alephzero-testnet.json`))
+        .address,
+    },
+    {
+      contractId: ContractIds.erc20,
+      networkId: alephzeroTestnet.network,
+      abi: await import(`@inkathon/contracts/deployments/erc20/metadata.json`),
+      address: (await import(`@inkathon/contracts/deployments/erc20/alephzero-testnet.json`))
         .address,
     },
     // TODO Add deployment for development chain
