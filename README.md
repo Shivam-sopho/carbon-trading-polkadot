@@ -2,13 +2,13 @@
 One stop solution for generating, lending and selling carbon credits.
 
 ## Solution 
-From an end-user perspective, our application will focus on 3 major areas:-
-1. Generation of Carbon Credits
-2. Allow users to borrow stable coins on Polkadot Substrate network by keeping their Carbon Credits as collateral.
-3. Allow users to sell their Carbon Credits in exchange of stable coins on Polkadot Substrate Network.
-4. From a macroeconomic perspective, our application will focus on the following:-
-5. We, as an organization, can use the accumulated Carbon Credits from user and sell them to organizations (private companies / govt agencies / countries) who need them to offset for their carbon emissions as per The Paris Agreement. 
-6. All these transactions will be recorded on the Polkadot Substrate network Blockchain to benefit from the immutable, decentralized ledger technology.
+1. From an end-user perspective, our application will focus on 3 major areas:-
+    a. Generation of Carbon Credits
+    b. Allow users to borrow stable coins on Polkadot Substrate network by keeping their Carbon Credits as collateral.
+    c. Allow users to sell their Carbon Credits in exchange of stable coins on Polkadot Substrate Network.
+2. From a macroeconomic perspective, our application will focus on the following:-
+3. We, as an organization, can use the accumulated Carbon Credits from user and sell them to organizations (private companies / govt agencies / countries) who need them to offset for their carbon emissions as per The Paris Agreement. 
+4. All these transactions will be recorded on the Polkadot Substrate network Blockchain to benefit from the immutable, decentralized ledger technology.
 
 
 ## The Stack
