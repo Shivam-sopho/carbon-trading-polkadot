@@ -15,7 +15,7 @@ One stop solution for generating, lending and selling carbon credits.
 
 ## Generation of Carbon Credits
 
-Carbon Credits can be generated through any trackable source which benefits the environment. Some of the sources which we will be considering (subject to further addition) are:-![celo-carbon-credits](https://user-images.githubusercontent.com/112708239/219795666-dee6c481-c478-4ffb-8777-4dacde812c83.png)
+Carbon Credits can be generated through any trackable source which benefits the environment. Some of the sources which we will be considering (subject to further addition) are:-
 
 1. Step counter - to encourage people to walk and avoid using private vehicles for short distance commute. (E.g. StepN). Every step counts and rewards the users in the form of Carbon Credit Tokens.
 2. Tracking use of public transport - Linking public transport ticketing and pass systems to our platform, so that users get rewarded with Carbon Credit Tokens whenever they use public transport.
