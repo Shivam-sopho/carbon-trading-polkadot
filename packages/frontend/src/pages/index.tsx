@@ -12,6 +12,7 @@ import 'twin.macro'
 const HomePage: NextPage = () => {
   // Display `useInkathon` error messages (optional)
   const { error } = useInkathon()
+
   useEffect(() => {
     if (!error) return
     toast.error(error.message)

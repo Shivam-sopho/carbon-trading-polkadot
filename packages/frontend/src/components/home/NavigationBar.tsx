@@ -1,13 +1,18 @@
 import { Button } from '@chakra-ui/react'
 import { FC } from 'react'
+import { useRouter } from 'next/router'
 import 'twin.macro'
 
 export const NavigationBar: FC = () => {
+  const router = useRouter()
+
   return (
     <>
       <div tw="ml-8 flex flex-row justify-between">
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/generate-carbon-token')
+          }}
           isLoading={false}
           size="md"
           py={6}
@@ -20,7 +25,9 @@ export const NavigationBar: FC = () => {
           Generate Carbon Token
         </Button>
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/lend-carbon-token')
+          }}
           isLoading={false}
           size="md"
           py={6}
@@ -33,7 +40,9 @@ export const NavigationBar: FC = () => {
           Lend Carbon Token
         </Button>
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/swap-carbon-token')
+          }}
           isLoading={false}
           size="md"
           py={6}
@@ -47,7 +56,9 @@ export const NavigationBar: FC = () => {
         </Button>
 
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/repay-loan')
+          }}
           isLoading={false}
           size="md"
           py={6}
@@ -61,7 +72,9 @@ export const NavigationBar: FC = () => {
         </Button>
 
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/marketplace')
+          }}
           isLoading={false}
           size="md"
           py={6}
@@ -75,7 +88,9 @@ export const NavigationBar: FC = () => {
         </Button>
 
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            router.push('/admin')
+          }}
           isLoading={false}
           size="md"
           py={6}
