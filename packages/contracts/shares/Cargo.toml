@@ -18,7 +18,7 @@ scale-info = { version = "2", default-features = false, features = ["derive"], o
 
 # These dependencies
 lending_project = { path = "../..", default-features = false }
-openbrush = { path = "../../..", default-features = false, features = ["ownable", "psp22"] }
+openbrush = { tag= "v2.3.0", git = "https://github.com/Supercolony-net/openbrush-contracts",default-features = false, features = ["ownable", "psp22"] }
 
 [lib]
 name = "shares_contract"
