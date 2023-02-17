@@ -1,3 +1,4 @@
+import { Button } from '@chakra-ui/react'
 import { HomePageTitle } from '@components/home/HomePageTitle'
 import { HomeTopBar } from '@components/home/HomeTopBar'
 import { CenterBody } from '@components/layout/CenterBody'
@@ -27,17 +28,96 @@ const HomePage: NextPage = () => {
         {/* Connect Wallet Button */}
         <ConnectButton />
       </div>
-      <div tw="mr-8 flex flex-row justify-end">
+      <div tw="mr-8 flex flex-row justify-between">
+        {/* Navigation Buttons */}
+        <div tw="ml-8 flex flex-row justify-between">
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Generate Carbon Token
+          </Button>
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Lend Carbon Token
+          </Button>
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Swap Carbon Token
+          </Button>
+
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Repay Loan
+          </Button>
+
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Marketplace
+          </Button>
+
+          <Button
+            onClick={() => {}}
+            isLoading={false}
+            size="md"
+            py={6}
+            fontWeight="bold"
+            rounded="2xl"
+            colorScheme="purple"
+            mt={8}
+            mr={8}
+          >
+            Admin Portal
+          </Button>
+        </div>
         {/* Chain Metadata Information */}
         <ChainInfo />
       </div>
 
-      <CenterBody tw="mt-20 mb-10 px-5">
-        <div tw="mt-10 flex w-full flex-wrap items-start justify-center gap-4">
-          {/* Greeter Read/Write Contract Interactions */}
-          <GreeterContractInteractions />
-        </div>
-      </CenterBody>
+      <CenterBody tw="mt-20 mb-10 px-5"></CenterBody>
     </>
   )
 }
